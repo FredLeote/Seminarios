@@ -12,7 +12,10 @@ public class TabelaOradores implements BaseColumns {
     }
 
     public void cria() {
-        //todo: criar a tabela na base de dados
-        
+        bd.execSQL("CREATE TABLE oradores (" +
+                "_id INTENGER PRIMARY KEY AUTOINCREMENT," +
+                "titulo TEXT," +
+                "nome TEXT NOT NULL" +
+                ")");
     }
 }
