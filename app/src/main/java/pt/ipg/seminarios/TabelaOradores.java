@@ -16,8 +16,8 @@ public class TabelaOradores implements BaseColumns {
 
     public void cria() {
         bd.execSQL("CREATE TABLE " + NOME_TABELA + " (" +
-                _ID +" INTENGER PRIMARY KEY AUTOINCREMENT," +
-                CAMPO_TITULO + " TEXT," +
+                _ID +" INTEGER PRIMARY KEY AUTOINCREMENT," +
+                CAMPO_TITULO+ " TEXT," +
                 CAMPO_NOME + " TEXT NOT NULL" +
                 ")");
     }

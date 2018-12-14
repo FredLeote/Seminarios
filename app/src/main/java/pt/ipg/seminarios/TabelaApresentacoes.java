@@ -16,7 +16,7 @@ public class TabelaApresentacoes implements BaseColumns {
 
     public void cria(){
         bd.execSQL("CREATE TABLE " + NOME_TABELA + " (" +
-                _ID +" INTENGER PRIMARY KEY AUTOINCREMENT," +
+                _ID +" INTEGER PRIMARY KEY AUTOINCREMENT," +
                 CAMPO_TITULO + " TEXT NOT NULL," +
                 CAMPO_ORADOR + " INTENGER NOT NULL," +
                 CAMPO_SUMARIO + " TEXT," +
