@@ -18,7 +18,7 @@ public class TabelaApresentacoes implements BaseColumns {
         bd.execSQL("CREATE TABLE " + NOME_TABELA + " (" +
                 _ID +" INTEGER PRIMARY KEY AUTOINCREMENT," +
                 CAMPO_TITULO + " TEXT NOT NULL," +
-                CAMPO_ORADOR + " INTENGER NOT NULL," +
+                CAMPO_ORADOR + " INTEGER NOT NULL," +
                 CAMPO_SUMARIO + " TEXT," +
                 "FOREIGN KEY (" + CAMPO_ORADOR + ") REFERENCES " +
                 TabelaOradores.NOME_TABELA + "(" + TabelaOradores._ID + ")" +
