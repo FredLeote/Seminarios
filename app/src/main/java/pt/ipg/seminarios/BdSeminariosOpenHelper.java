@@ -30,6 +30,7 @@ public class BdSeminariosOpenHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         new TabelaOradores(db).cria();
+        new TabelaApresentacoes(db).cria();
     }
 
     /**
